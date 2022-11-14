@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		076060E8291E96700070BA4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076060E7291E96700070BA4F /* AppDelegate.swift */; };
 		076060EA291E96700070BA4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076060E9291E96700070BA4F /* SceneDelegate.swift */; };
-		076060EC291E96700070BA4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076060EB291E96700070BA4F /* ViewController.swift */; };
 		076060EF291E96700070BA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076060ED291E96700070BA4F /* Main.storyboard */; };
 		076060F1291E96700070BA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076060F0291E96700070BA4F /* Assets.xcassets */; };
 		076060F4291E96700070BA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076060F2291E96700070BA4F /* LaunchScreen.storyboard */; };
+		07606100291EB40A0070BA4F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076060FF291EB40A0070BA4F /* OnBoardingViewController.swift */; };
+		07606103291EB98E0070BA4F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07606102291EB98E0070BA4F /* UIView+Extension.swift */; };
+		07ADB50C29223CB600865678 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADB50B29223CB600865678 /* OnboardingSlide.swift */; };
+		07ADB50E2922535500865678 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADB50D2922535500865678 /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		076060E4291E96700070BA4F /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076060E7291E96700070BA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		076060E9291E96700070BA4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		076060EB291E96700070BA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		076060EE291E96700070BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		076060F0291E96700070BA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076060F3291E96700070BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		076060F5291E96700070BA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076060FF291EB40A0070BA4F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		07606102291EB98E0070BA4F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		07ADB50B29223CB600865678 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		07ADB50D2922535500865678 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		076060E6291E96700070BA4F /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				07606101291EB9560070BA4F /* Extensions */,
+				076060FD291EB2D10070BA4F /* CustomViews */,
+				076060FC291EB2A90070BA4F /* Views */,
+				076060FB291EB28F0070BA4F /* Models */,
 				076060E7291E96700070BA4F /* AppDelegate.swift */,
 				076060E9291E96700070BA4F /* SceneDelegate.swift */,
-				076060EB291E96700070BA4F /* ViewController.swift */,
 				076060ED291E96700070BA4F /* Main.storyboard */,
 				076060F0291E96700070BA4F /* Assets.xcassets */,
 				076060F2291E96700070BA4F /* LaunchScreen.storyboard */,
 				076060F5291E96700070BA4F /* Info.plist */,
 			);
 			path = Yummie;
+			sourceTree = "<group>";
+		};
+		076060FB291EB28F0070BA4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07ADB50B29223CB600865678 /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		076060FC291EB2A90070BA4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				076060FE291EB2F70070BA4F /* OnBoarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		076060FD291EB2D10070BA4F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		076060FE291EB2F70070BA4F /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				076060FF291EB40A0070BA4F /* OnBoardingViewController.swift */,
+				07ADB50D2922535500865678 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		07606101291EB9560070BA4F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07606102291EB98E0070BA4F /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076060EC291E96700070BA4F /* ViewController.swift in Sources */,
+				07ADB50C29223CB600865678 /* OnboardingSlide.swift in Sources */,
 				076060E8291E96700070BA4F /* AppDelegate.swift in Sources */,
 				076060EA291E96700070BA4F /* SceneDelegate.swift in Sources */,
+				07606103291EB98E0070BA4F /* UIView+Extension.swift in Sources */,
+				07606100291EB40A0070BA4F /* OnBoardingViewController.swift in Sources */,
+				07ADB50E2922535500865678 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +347,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +376,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
