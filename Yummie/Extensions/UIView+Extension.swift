@@ -7,6 +7,8 @@
 
 import UIKit
 
+// extension created to have access to the corner radius of the button from
+// the attributes inspection panel
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get { return self.cornerRadius }

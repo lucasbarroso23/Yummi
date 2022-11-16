@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Yummie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-dy-1fh" customClass="CardView" customModule="Yummie" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="56"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1BC-cg-cdp">
+                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="9OW-UU-XGz"/>
+                                    <constraint firstAttribute="height" constant="40" id="lyc-1i-TG8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mn-IU-DEy">
+                                <rect key="frame" x="56" y="20.333333333333332" width="86" height="15.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1BC-cg-cdp" secondAttribute="bottom" constant="8" id="5x3-lk-cMM"/>
+                            <constraint firstItem="1BC-cg-cdp" firstAttribute="leading" secondItem="L5v-dy-1fh" secondAttribute="leading" constant="8" id="AuT-fN-YrH"/>
+                            <constraint firstAttribute="height" constant="56" id="Ixa-f0-0H8"/>
+                            <constraint firstAttribute="trailing" secondItem="6mn-IU-DEy" secondAttribute="trailing" constant="8" id="axn-3C-MIE"/>
+                            <constraint firstItem="6mn-IU-DEy" firstAttribute="leading" secondItem="1BC-cg-cdp" secondAttribute="trailing" constant="8" id="kwB-Jq-JjC"/>
+                            <constraint firstItem="6mn-IU-DEy" firstAttribute="centerY" secondItem="1BC-cg-cdp" secondAttribute="centerY" id="mt8-mX-r4f"/>
+                            <constraint firstAttribute="width" constant="150" id="ygQ-Ac-GYG"/>
+                            <constraint firstItem="1BC-cg-cdp" firstAttribute="top" secondItem="L5v-dy-1fh" secondAttribute="top" constant="8" id="yl0-qh-eb1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="L5v-dy-1fh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6bL-Kx-RUg"/>
+                <constraint firstAttribute="bottom" secondItem="L5v-dy-1fh" secondAttribute="bottom" id="X6n-Gq-vqa"/>
+                <constraint firstItem="L5v-dy-1fh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oR8-6K-XaS"/>
+                <constraint firstAttribute="trailing" secondItem="L5v-dy-1fh" secondAttribute="trailing" id="y5J-cB-4jN"/>
+            </constraints>
+            <size key="customSize" width="150" height="56"/>
+            <connections>
+                <outlet property="categoryImageView" destination="1BC-cg-cdp" id="cX6-EC-E7a"/>
+                <outlet property="categoryTitleLbl" destination="6mn-IU-DEy" id="IOe-39-5w0"/>
+            </connections>
+            <point key="canvasLocation" x="51.908396946564885" y="23.239436619718312"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
