@@ -30,6 +30,7 @@ class OnBoardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.set(true, forKey: "FIRST-LAUNCH")
 
         // slides contains the list of onboarding slides
         slides = [
@@ -40,6 +41,8 @@ class OnBoardingViewController: UIViewController {
         
         // setting the number of elements of our pageControl with the number of slides
         pageControl.numberOfPages = slides.count
+        
+        
     }
     
 

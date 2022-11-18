@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		076060E8291E96700070BA4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076060E7291E96700070BA4F /* AppDelegate.swift */; };
-		076060EA291E96700070BA4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076060E9291E96700070BA4F /* SceneDelegate.swift */; };
 		076060EF291E96700070BA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076060ED291E96700070BA4F /* Main.storyboard */; };
 		076060F1291E96700070BA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076060F0291E96700070BA4F /* Assets.xcassets */; };
 		076060F4291E96700070BA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076060F2291E96700070BA4F /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		076060E4291E96700070BA4F /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076060E7291E96700070BA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		076060E9291E96700070BA4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		076060EE291E96700070BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		076060F0291E96700070BA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076060F3291E96700070BA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				076060FC291EB2A90070BA4F /* Views */,
 				076060FB291EB28F0070BA4F /* Models */,
 				076060E7291E96700070BA4F /* AppDelegate.swift */,
-				076060E9291E96700070BA4F /* SceneDelegate.swift */,
 				076060ED291E96700070BA4F /* Main.storyboard */,
 				076060F0291E96700070BA4F /* Assets.xcassets */,
 				076060F2291E96700070BA4F /* LaunchScreen.storyboard */,
@@ -392,7 +389,6 @@
 				07F7BED32924DDBC00DD9888 /* CategoryCollectionViewCell.swift in Sources */,
 				07ADB50C29223CB600865678 /* OnboardingSlide.swift in Sources */,
 				076060E8291E96700070BA4F /* AppDelegate.swift in Sources */,
-				076060EA291E96700070BA4F /* SceneDelegate.swift in Sources */,
 				07606103291EB98E0070BA4F /* UIView+Extension.swift in Sources */,
 				07606100291EB40A0070BA4F /* OnBoardingViewController.swift in Sources */,
 				079658AE292657D90057FBB0 /* DishDetailViewController.swift in Sources */,
