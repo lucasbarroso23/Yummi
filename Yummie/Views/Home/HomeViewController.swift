@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
     
     var populars: [Dish] = [
         .init(id: "id1", name: "Garri", description: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 348),
-        .init(id: "id2", name: "Pizza", description: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 342),
+        .init(id: "id2", name: "Pizza", description: "this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted, this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 342),
         .init(id: "id3", name: "Carbonara", description: "this is the best i have ever tasted", image: "https://picsum.photos/100/200", calories: 534)
     ]
     
@@ -101,6 +101,30 @@ extension HomeViewController:
             cell.setup(dish: specials[indexPath.row])
             return cell
         default: return UICollectionViewCell()
-        }       
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            // controller represents our target view controller
+            let controller = ListDishesViewController.instantiate()
+            
+            // category will be used to change the navigation bar title
+            controller.category = categories[indexPath.row]
+            
+            // pushView will navigate to the target view controller
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            // controller represents our target view controller
+            let controller = DishDetailViewController.instantiate()
+            
+            // checking wich collectionView is clicked to differentiate the data source
+            // then we populate the dish variable from the controller
+            controller.dish = collectionView == popularCollectionView ?
+            populars[indexPath.row] : specials[indexPath.row]
+            
+            // pushView will navigate to the target view controller
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }

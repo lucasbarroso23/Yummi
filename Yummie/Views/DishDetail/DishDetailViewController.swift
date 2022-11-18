@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DishDetailViewController: UIViewController {
     
@@ -16,11 +17,20 @@ class DishDetailViewController: UIViewController {
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var nameField: UITextField!
     
+    var dish: Dish!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        populateView()
+    }
+    
+    // populateView will pass the dish values to the components in the ui
+    private func populateView() {
+        dishImageView.kf.setImage(with: dish.image?.asUrl)
+        titleLbl.text = dish.name
+        descriptionLbl.text = dish.description
+        caloriesLbl.text = dish.formattedCalories
     }
     
     // connector to the button action, in this case we dont need an outlet
