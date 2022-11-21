@@ -7,6 +7,7 @@
 
 import Foundation
 
+// app available methods
 enum Method: String {
     case get = "GET"
     case post = "POST"

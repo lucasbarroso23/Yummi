@@ -36,19 +36,18 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        NetworkService.shared.myFirstRequest {(result) in
+            switch result{
+            case .success(let data):
+                for dish in data {
+                    print(dish.name  ?? "")
+                }
+            case .failure(let error):
+                print("The error is: \(error.localizedDescription)")
+            }
+        }
         
-        let service = NetworkService()
-        let request = service.createRequest(
-            route: .temp,
-            method: .post,
-            parameters: [
-                "firstName": "Lucas",
-                "LastName": "Barroso"
-            ])
-        
-        print("The URL is: \(String(describing: request?.url))")
-        print("The body: \(String(describing: request?.httpBody))")
-
        registerCells()
             
     // setting the title for the view

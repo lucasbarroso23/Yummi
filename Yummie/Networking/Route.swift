@@ -7,6 +7,7 @@
 
 import Foundation
 
+// route will build our routes addresses
 enum Route {
     static let baseUrl = "https://yummie.glitch.me"
     
@@ -14,7 +15,7 @@ enum Route {
     
     var description: String {
         switch self {
-        case .temp: return "/temp"
+        case .temp: return "/dishes/cat1"
         }
     }
 }
